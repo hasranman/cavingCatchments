@@ -1,45 +1,35 @@
 <?php
 
-class CavingArea
+class Area
 {
-    function __construct(public $name, public $subAreas) {}
-}
-
-class SubArea
-{
-    function __construct(public $name, public $catchments = []) {}
-}
-
-class Catchment
-{
-    function __construct(public $name) {}
+    function __construct(public $name, public $subAreas = []) {}
 }
 
 //Replace with call to database when set up
 function getAreas($area = 'ALL'): array
 {
 
-    $yorkshireDales = new cavingArea(
+    $yorkshireDales = new Area(
         'Yorkshire Dales',
         [
-            new SubArea(
+            new Area(
                 "Ingleborough and Whernside",
                 [
-                    new Catchment('Alum Pot'),
-                    new Catchment('Newby Moss'),
-                    new Catchment('The Allotment'),
-                    new Catchment('Kingsdale Head'),
-                    new Catchment('Marble Steps'),
-                    new Catchment('Gaping Gill'),
-                    new Catchment('Bruntscar'),
-                    new Catchment('Park Fell'),
-                    new Catchment('White Scar'),
-                    new Catchment('West Kingsdale'),
-                    new Catchment('East Kingsdale'),
-                    new Catchment('Chapel-le-Dale')
+                    new Area('Alum Pot'),
+                    new Area('Newby Moss'),
+                    new Area('The Allotment'),
+                    new Area('Kingsdale Head'),
+                    new Area('Marble Steps'),
+                    new Area('Gaping Gill'),
+                    new Area('Bruntscar'),
+                    new Area('Park Fell'),
+                    new Area('White Scar'),
+                    new Area('West Kingsdale'),
+                    new Area('East Kingsdale'),
+                    new Area('Chapel-le-Dale')
                 ]
             ),
-            new SubArea("Ease Gill")
+            new Area("Ease Gill")
         ]
     );
 

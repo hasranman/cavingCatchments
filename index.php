@@ -19,15 +19,13 @@
                 <option value="MENDIPS">Mendips</option>
             </select>
         </form>
-        <?php
-
-
-        // $list = printNestedArray($regions, '');
         
-        ?>
+        
+
+
         <div class="row">
-            <div class="list">
-                <!-- <?= $list ?> -->
+            <div id="areaList" class="list">
+                
             </div>
         </div>
     </body>
