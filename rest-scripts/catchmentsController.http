@@ -1,0 +1,4 @@
+POST http://localhost:8000/catchmentsController.php
+Content-Type: application/x-www-form-urlencoded
+
+userAction=areas&areaAction=YORKSHIREDALES
