@@ -1,0 +1,13 @@
+.toolbar {
+    padding: 7px;
+    border: solid;
+    border-color: black;
+}
+
+.btn {
+    padding:2px;
+    border: solid;
+    border-color: navy;
+    text-decoration: none!important;
+    color: black;
+}

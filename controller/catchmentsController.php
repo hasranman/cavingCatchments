@@ -1,6 +1,6 @@
 <?php 
 
-require_once("catchmentsModel.php");
+require_once("../cavingCatchments/model/catchmentsModel.php");
 
 $action = $_POST['userAction'];
 $area = $_POST['areaAction'];
