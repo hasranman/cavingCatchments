@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 
+<?php
+    require_once("model/coreModel.php");
+?>
+
 <html>
     <head>
         <script src="view/scripts/jquery-3.7.1.min.js"></script>
@@ -9,13 +13,11 @@
     </head>
     <body>
         <header>
-            <?php 
-                include("view/nav.php");
-            ?>
+            <?= getNavbar(); ?>
         </header>
         <div>
         Welcome to the Explorer Logs
         </div>
-        
+
     </body>
 </html>

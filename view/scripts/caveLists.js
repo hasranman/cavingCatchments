@@ -4,7 +4,7 @@ function getAreas(area) {
     const data = {
         userAction: "areas", areaAction: area
     };
-    const controller = "../cavingCatchments/controller/catchmentsController.php";
+    const controller = "http://localhost:8000/controller/catchmentsController.php";
     $.ajax({
         type: "POST",
         url: controller,
@@ -14,6 +14,7 @@ function getAreas(area) {
         success: function (response) {
             let list = "";
             list = displayAreasList(response, list);
+            console.log("boo");
             document.getElementById('areaList').innerHTML = list; // Security risk, address later
             return response;
         },
@@ -24,14 +25,13 @@ function getAreas(area) {
 }
 
 function displayAreasList(areas, list) {
+    console.log("hello");
     list += '<ul>';
     for (const area of areas) {
         list += '<li>' + area.name;
         list = displayAreasList(area.subAreas, list);
         list += "</li>";
-
     }
-
     list += '</ul>';
 
     return list;

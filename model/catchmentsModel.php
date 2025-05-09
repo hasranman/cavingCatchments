@@ -9,6 +9,8 @@ class Area
 function getAreas($area = 'ALL'): array
 {
 
+    // $db = new SQLite3('../database.db');
+
     $yorkshireDales = new Area(
         'Yorkshire Dales',
         [

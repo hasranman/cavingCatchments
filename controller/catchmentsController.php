@@ -1,9 +1,10 @@
 <?php 
 
-require_once("../cavingCatchments/model/catchmentsModel.php");
+require_once("../model/catchmentsModel.php");
 
 $action = $_POST['userAction'];
 $area = $_POST['areaAction'];
+
 
 switch ($action){
     case "areas":
