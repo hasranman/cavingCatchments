@@ -14,7 +14,6 @@ function getAreas(area) {
         success: function (response) {
             let list = "";
             list = displayAreasList(response, list);
-            console.log("boo");
             document.getElementById('areaList').innerHTML = list; // Security risk, address later
             return response;
         },
@@ -25,7 +24,6 @@ function getAreas(area) {
 }
 
 function displayAreasList(areas, list) {
-    console.log("hello");
     list += '<ul>';
     for (const area of areas) {
         list += '<li>' + area.name;

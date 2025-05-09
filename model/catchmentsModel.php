@@ -6,7 +6,7 @@ class Area
 }
 
 //Replace with call to database when set up
-function getAreas($area = 'ALL'): array
+function getAreas($area = ''): array
 {
 
     // $db = new SQLite3('../database.db');

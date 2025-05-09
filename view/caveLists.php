@@ -18,14 +18,13 @@
         </header>
             <form name="cavingAreas" action="" method="post">
                 <select id="areaDropdown" name="areaDropdown" onclick="getAreas(this.value)">
+                    <option value=""></option>
                     <option value="ALL">All</option>
                     <option value="YORKSHIREDALES">Yorkshire Dales</option>
                     <option value="PEAKDISTRICT">Peak District</option>
                     <option value="MENDIPS">Mendips</option>
                 </select>
             </form>
-            
-
     
         <div class="row">
             <div id="areaList" class="list">

@@ -6,8 +6,9 @@
 
 .btn {
     padding:2px;
-    border: solid;
-    border-color: navy;
+    border: solid!important;
+    border-color: navy!important;
     text-decoration: none!important;
     color: black;
+    margin: 0px;
 }
